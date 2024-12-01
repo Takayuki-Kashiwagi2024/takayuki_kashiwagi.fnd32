@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  color: white;
+  background-color: green;
+}
+
+.input-container {
+  margin-bottom: 10px;
+}
+
+#output {
+  margin-top: 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center; /* 縦方向に中央揃え */
+  margin: 20px 0;
+}
+
+.delete-button {
+  margin-right: 10px; /* テキストとの間にスペースを追加 */
+}
