@@ -6,12 +6,12 @@ function addText() {
     // 入力されたテキストを取得
     const inputText = document.getElementById("textInput").value;
 
-    // 入力されたテキストが空でない場合のみ追加
+    // 入力されたテキストが空でなければ追加する
     if (inputText.trim() !== "") {
-        // 配列にテキストを追加
+        // 配列にテキストを追加する
         textArray.push(inputText);
 
-        // 結果を表示
+        // 結果を表示する
         displayText();
     }
 
@@ -22,14 +22,14 @@ function addText() {
 function displayText() {
     const outputElement = document.getElementById("output");
 
-    // 出力エリアをクリア
+    // 出力エリアをクリアする
     outputElement.innerHTML = "";
 
-    // 配列の中身をすべて表示
+    // 配列の中身をすべて表示する
     for (let i = 0; i < textArray.length; i++) {
         const div = document.createElement("div");
         div.classList.add("item");
-        // テキストを追加
+        // テキストを追加する
         div.textContent = textArray[i];
 
         // 削除ボタンを作成
@@ -40,9 +40,9 @@ function displayText() {
             deleteText(i); // 削除関数を呼び出す
         };
 
-        // divに削除ボタンを追加
+        // divに削除ボタンを追加する
         div.appendChild(deleteButton);
-        // <div>に追加
+        // <div>に追加する
         outputElement.appendChild(div);
     }
 }
