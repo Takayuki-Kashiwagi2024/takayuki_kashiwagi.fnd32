@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>パントリーの中の食品を管理</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-    <h1>☆パントリーを整理したい</h1>
-  
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>パントリーの中の食品を管理しよう</title>
+      <!-- headタグ内などで読込 -->
+      <link rel="stylesheet" type="text/css" href="style.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+   </head>
 
+   <body>
+    <h1>☆パントリーを整理したい</h1>
+    <h3>ローカルストレージへの保存ができていないけど…</h3>
+    <h3>↓入力欄↓</h3>
+    
+    <!-- テキスト入力項目 -->
+    
     <div class="input-container">
-        <label for="textInput">食品名を入力: </label>
-        <input type="text" id="textInput" placeholder="ここに入力">
-        <button onclick="addText()">表示</button>
+      <label for="textInput">食品名を入力: </label>
+      <input type="text" id="textInput" placeholder="ここに入力">
+      <label>賞味期限:<input type="text" id="datepicker"></label>
+      <button onclick="addText()">表示</button>
     </div>
 
+    <p>リスト</p>
     <div id="output"></div>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="script.js"></script>
-</body>
+   </body>
 </html>
