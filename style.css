@@ -1,24 +1,39 @@
 body {
   font-size: 150%;
+  font-family: Arial, sans-serif;
+  margin: 20px;
 }
 
 h1 {
   color: white;
   background-color: green;
+  margin: 2% 0;
+}
+
+h3 {
+  margin: 2% 0;
 }
 
 p {
   background-color: yellow;
 }
 
-.awesome {
-  font-weight: bold;
+.input-container {
+  margin-bottom: 10px;
 }
 
-.great {
+#output {
+  margin-top: 10px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.little {
-  font-size: 50%;
+.item {
+  display: flex;
+  align-items: center; 
+  margin: 20px 0;
+}
+
+.delete-button {
+  margin-right: 10px; 
 }
