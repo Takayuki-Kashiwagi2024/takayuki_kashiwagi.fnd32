@@ -4,6 +4,15 @@ body {
   margin: 20px;
 }
 
+#slideshow {
+  max-width: 80%; /* 親要素の幅に応じて最大幅を設定 */
+  max-height: 250px; /* 最大高さを設定 */
+  width: auto; /* 幅は自動調整 */
+  height: auto; /* 高さは自動調整 */
+  object-fit: contain; /* 画像が枠に収まるように表示 */
+}
+
+
 h1 {
   color: white;
   background-color: green;
@@ -30,10 +39,10 @@ p {
 
 .item {
   display: flex;
-  align-items: center; 
+  align-items: center; /* 縦方向に中央揃え */
   margin: 20px 0;
 }
 
 .delete-button {
-  margin-right: 10px; 
+  margin-right: 10px; /* テキストとの間にスペースを追加 */
 }
